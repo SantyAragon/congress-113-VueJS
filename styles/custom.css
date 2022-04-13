@@ -1,0 +1,175 @@
+body {
+    min-height: 100vh;
+    color: #0c1a3f;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+}
+
+@media only screen and (max-width:992px) {
+    .filters {
+        flex-wrap: wrap;
+    }
+
+    .mail {
+        display: none;
+    }
+
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        text-align: center;
+        width: 100%;
+    }
+
+    #congress {
+        margin: 1rem 0px;
+    }
+}
+
+
+
+.bg-light {
+    /* color: white; */
+    background-color: #d61f49 !important;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail {
+    padding-right: 2rem;
+}
+
+nav a {
+    color: white !important;
+    align-items: center;
+    display: flex;
+}
+
+nav img {
+    width: 10vh;
+    margin: 0px 1.5rem;
+}
+
+.dropdown-toggle {
+    border: none;
+    color: white !important;
+}
+
+.dropdown-menu a {
+    border: none !important;
+    color: #0c1a3f !important;
+}
+
+.filters label {
+    margin: 1rem;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:3rem 2rem;
+}
+
+.info-index {
+    width: 50%;
+}
+
+#congress {
+    width: 80%;
+    border-radius: 5%;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: #0c1a3f;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.loader-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c1a3f3d;
+    position:fixed;
+    z-index:1;
+}
+
+.loader-desactive {
+    display: none;
+}
+
+/* From cssbuttons.io by @satyamchaudharydev */
+.loading {
+    --speed-of-animation: 1.1s;
+    --gap: 8px;
+    --first-color: #d61f49;
+    --second-color: #0c1a3f;
+    --third-color: #d61f49;
+    --fourth-color: #0c1a3f;
+    --fifth-color: #d61f49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    gap: 8px;
+    height: 100px;
+}
+
+.loading span {
+    width: 6px;
+    height: 100px;
+    background: var(--first-color);
+    animation: scale var(--speed-of-animation) ease-in-out infinite;
+}
+
+.loading span:nth-child(2) {
+    background: var(--second-color);
+    animation-delay: -0.8s;
+}
+
+.loading span:nth-child(3) {
+    background: var(--third-color);
+    animation-delay: -0.7s;
+}
+
+.loading span:nth-child(4) {
+    background: var(--fourth-color);
+    animation-delay: -0.6s;
+}
+
+.loading span:nth-child(5) {
+    background: var(--fifth-color);
+    animation-delay: -0.5s;
+}
+
+@keyframes scale {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.05);
+    }
+
+    20% {
+        transform: scaleY(1);
+    }
+}
